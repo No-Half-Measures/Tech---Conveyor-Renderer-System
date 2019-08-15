@@ -206,9 +206,9 @@ namespace NoHalfMeasures
 
             time += Time.deltaTime / itemsPerSecond;
 
-            if (time > itemsPerSecond)
+            if (time > 1.0f)
             {
-                time = time - itemsPerSecond;
+                time = time - 1;
 
                 for (int i = slots.Count - 1; i > -1; i--)
                 {
